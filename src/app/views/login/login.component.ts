@@ -18,6 +18,10 @@ export class LoginComponent implements OnInit {
 
   ngOnInit(): void {
     this.cliente = new Cliente(this.http)
+    if(Sessao.getCliente()){
+      this.router.navigateByUrl("home")
+      return     
+    }
   }
 
   cliente:Cliente

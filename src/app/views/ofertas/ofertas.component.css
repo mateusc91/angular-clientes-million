@@ -1,0 +1,7 @@
+.card-deck{
+    display:flex!important;
+    justify-content: space-between!important;
+    width: 75%;
+    margin:0 auto;
+
+}

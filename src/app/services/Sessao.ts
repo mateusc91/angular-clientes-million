@@ -5,6 +5,10 @@ export class Sessao{
     localStorage.setItem("cliente", JSON.stringify(cliente))
   }
 
+  public static removeCliente():void{
+    localStorage.removeItem("cliente")
+  }
+
   public static getCliente():Cliente{
     if(!localStorage.getItem("cliente")) return null
     let cli:Cliente
